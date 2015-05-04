@@ -1,0 +1,20 @@
+<div id="welcomemodal" class="modal">
+    <p>Welcome to Snake! Let's play!</p>
+    <% if (!isMobile) { %>
+    	<div class="button-group-label">Pick Your Board</div>
+    	<div class="auto-margins center-text">
+    		<button id="button_size_small" class="pull-left button-margins small-button options-button">Small</button>
+    		<button id="button_size_medium" class="medium-button options-button">Medium</button>
+    		<button id="button_size_large" class="pull-right button-margins options-button">Large</button>
+    	</div>
+    <% } %>
+    <div class="clear-floats button-group-label">Pick Your Speed</div>
+    <div class="auto-margins center-text">
+    	<button id="button_speed_slow" class="pull-left button-margins options-button" style="margin-left: 60px;">Slow</button>
+    	<button id="button_speed_fast" class="pull-right button-margins options-button" style="margin-right: 60px;">Fast</button>
+    </div>
+
+    <div class="clear-floats" style="margin-top: 125px;">
+    	<button id="newgame" disabled>New Game</button>
+    </div>
+</div>

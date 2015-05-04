@@ -1,0 +1,196 @@
+body {
+    background-color: #222;
+    color: #e4cb96;
+}
+
+div {
+    color: #e4cb96;
+    font-weight: bold;
+    font-family: Tahoma,Verdana,Arial,sans-serif;
+}
+
+#header { 
+    clear: both;
+    height: 75px; 
+    margin-left: 20px;
+    border: 10px solid #e4cb96; 
+    background-image: url("/snake/assets/images/woodpanel.jpg");
+    background-repeat: repeat;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    font-family: Tahoma,Verdana,Arial,sans-serif;
+}
+
+canvas { 
+    border-left: 10px solid #e4cb96; 
+    border-right: 10px solid #e4cb96;
+}
+
+#canvaswrapper {
+    margin-left: 30px;
+    height: 500px;
+}
+
+
+#controlleft {
+    margin-left: 10px;
+    height: 100px;
+    overflow: hidden;
+    display: inline;
+}
+
+#controlmiddle {
+    width: 520px;
+    height: 100px; 
+    background-image: url("/snake/assets/images/woodpanel.jpg");
+    background-repeat: repeat;
+    display: inline;
+}
+
+#controlright {
+    height: 100px;
+    overflow: hidden;
+    display: inline;
+}
+
+#arcadebuttons {
+    display: block;
+    margin: auto;
+    margin-top: 10px; 
+}
+
+.modal {                    
+    background: none repeat scroll 0 0 white;
+    border: 10px solid #e4cb96;
+    border-radius: 20px;
+    background-image: url("/snake/assets/images/woodpanel.jpg");
+    background-repeat: repeat;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Tahoma,Verdana,Arial,sans-serif;
+    top: 10%;
+    left: 50%;
+    position: absolute;
+    width: 340px;
+    margin-left: -180px;
+}
+ 
+.game-over {
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+button {
+    display: block;
+    font-size: 19px;
+    font-weight: bold;
+    height: 35px;
+    text-transform: uppercase;
+    padding: 8px 10px;
+    margin: 20px auto;
+    color: #ccc;
+    background-color: #555;
+    background: -webkit-linear-gradient(#888, #555);
+    background: linear-gradient(#888, #555);
+    border: 0 none;
+    border-radius: 3px;
+    text-shadow: 0 -1px 0 #000;
+    box-shadow: 0 1px 0 #666, 0 5px 0 #444, 0 6px 6px rgba(0,0,0,0.6);
+    cursor: pointer;
+    -webkit-transition: all 150ms ease;
+    transition: all 150ms ease;
+}
+
+button:disabled {
+    color: #333;
+    cursor: not-allowed
+}
+
+button:hover:enabled {
+    color: #fff;
+    text-shadow: 0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff;
+    box-shadow: 0 1px 0 #666, 0 2px 0 #444, 0 2px 2px rgba(0,0,0,0.9);
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px); 
+    -webkit-animation: pulsate 1.2s linear infinite;
+    animation: pulsate 1.2s linear infinite;
+}
+
+@-webkit-keyframes pulsate {
+    0%   { color: #ddd; text-shadow: 0 -1px 0 #000; }
+    50%  { color: #fff; text-shadow: 0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff; }
+    100% { color: #ddd; text-shadow: 0 -1px 0 #000; }
+}
+         
+@keyframes pulsate {
+    0%   { color: #ddd; text-shadow: 0 -1px 0 #000; }
+    50%  { color: #fff; text-shadow: 0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff; }
+    100% { color: #ddd; text-shadow: 0 -1px 0 #000; }
+}
+
+button:active:enabled, button.selected-option {
+    color: #fff;
+    text-shadow: 0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff;
+    box-shadow: 0 1px 0 #666, 0 2px 0 #444, 0 2px 2px rgba(0,0,0,0.9);
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+    -webkit-animation: none;
+    animation: none;
+}
+
+.small-button {
+    font-size: 14px;
+}
+ 
+.medium-button {
+    display: inline;
+    font-size: 16px;
+}
+
+.button-margins {
+    margin-left: 10px;
+    margin-right: 10px
+} 
+
+.button-group-label {
+    margin-top: 20px;
+}
+
+.full-screen-wrapper {
+    width: 100%;
+    height: 100%;
+}
+
+.auto-margins {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.add-twenty {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+keep-middle {
+   display: inline;
+}
+
+center-text {
+    text-align: center;
+}
+
+.clear-floats {
+    clear: both;
+}
+
